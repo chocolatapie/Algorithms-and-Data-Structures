@@ -1,5 +1,6 @@
 ﻿using System;
 using Algoritms_and_DataStructures.LinkedList;
+using Algoritms_and_DataStructures.MathOperationFromIncrement;
 
 namespace Algoritms_and_DataStructures
 {
@@ -62,7 +63,31 @@ namespace Algoritms_and_DataStructures
                 }
             }
             Console.WriteLine();
+            Console.WriteLine();
 
+            Console.ReadKey();
+            #endregion
+
+            #region MathOperations
+
+            Console.WriteLine("Substraction: ");
+            int A = 4;
+            int B = 9;
+
+            int C = MathOperationsFromIncrement.Substraction(A, B);
+            Console.WriteLine("{0} - {1} = {2}", A, B, C);
+            Console.WriteLine();
+
+            Console.WriteLine("Multiplication: ");
+            int D = MathOperationsFromIncrement.Multiplication(A, B);
+            Console.WriteLine("{0} * {1} = {2}", A, B, D);
+
+            Console.WriteLine();
+            Console.WriteLine("Division: ");
+            int Aa = 100;
+            int Bb = 25;
+            int Cc = MathOperationsFromIncrement.Division(Aa, Bb);
+            Console.WriteLine("{0} / {1} = {2}", Aa, Bb, Cc);
 
             Console.ReadKey();
             #endregion
