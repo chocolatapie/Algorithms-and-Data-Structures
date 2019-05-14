@@ -1,6 +1,7 @@
 ﻿using System;
 using Algoritms_and_DataStructures.LinkedList;
 using Algoritms_and_DataStructures.MathOperationFromIncrement;
+using Algoritms_and_DataStructures.StringAlgorythms;
 
 namespace Algoritms_and_DataStructures
 {
@@ -9,6 +10,8 @@ namespace Algoritms_and_DataStructures
         static void Main(string[] args)
         {
             #region LinkedList
+            Console.WriteLine("Linked List: ");
+            Console.WriteLine();
             Console.WriteLine("This is our linked list: ");
             LinkedList.LinkedList myList = new LinkedList.LinkedList();
             myList.AddLastValue(5);
@@ -63,13 +66,13 @@ namespace Algoritms_and_DataStructures
                 }
             }
             Console.WriteLine();
+            Console.WriteLine("-------------------------------------------------------------------");
             Console.WriteLine();
-
-            Console.ReadKey();
             #endregion
 
             #region MathOperations
-
+            Console.WriteLine("Math operations: ");
+            Console.WriteLine();
             Console.WriteLine("Substraction: ");
             int A = 4;
             int B = 9;
@@ -88,9 +91,47 @@ namespace Algoritms_and_DataStructures
             int Bb = 25;
             int Cc = MathOperationsFromIncrement.Division(Aa, Bb);
             Console.WriteLine("{0} / {1} = {2}", Aa, Bb, Cc);
+            Console.WriteLine("-------------------------------------------------------------------");
+            Console.WriteLine();
+            #endregion
+
+            #region StringAlgorythms
+            Console.WriteLine("Checks is all symbols in string is unique");
+            string first = "asdfghjkl";
+            string second = "asdfghhjkl";
+            string third = "aaasdfghjkl";
+            string fourth = "asdfghjj";
+            string fifth = "asdfghjklzmxncbv";
+            Console.WriteLine(first + " " + "---" + " " + CustomStringAlgorythms.AreAllSymbolsUnique(first));
+            Console.WriteLine(second + " " + "---" + " " + CustomStringAlgorythms.AreAllSymbolsUnique(second));
+            Console.WriteLine(third + " " + "---" + " " + CustomStringAlgorythms.AreAllSymbolsUnique(third));
+            Console.WriteLine(fourth + " " + "---" + " " + CustomStringAlgorythms.AreAllSymbolsUnique(fourth));
+            Console.WriteLine(fifth + " " + "---" + " " + CustomStringAlgorythms.AreAllSymbolsUnique(fifth));
+            Console.WriteLine();
+
+            //IsPermutation
+            Console.WriteLine();
+            Console.WriteLine("Checks if first string is only a permutation of another one: ");
+            string permut1 = "asdfgh";
+            string permut2 = "hgfdsa";
+            string permut3 = "aaasssdddff";
+            string permut4 = "aassssddfff";
+            Console.WriteLine(CustomStringAlgorythms.IsPermutation(permut1, permut2));
+            Console.WriteLine(CustomStringAlgorythms.IsPermutation(permut3, permut4));
+            Console.WriteLine();
+            //
+
+            //Compressor
+            Console.WriteLine("Compresses the long string");
+            string compress1 = "aaaaaavvvvvvfghhhjjk";
+            string compress2 = "asdfghj";
+            Console.WriteLine(CustomStringAlgorythms.StringCompress(compress1));
+            Console.WriteLine(CustomStringAlgorythms.StringCompress(compress2));
+            Console.WriteLine();
+            //
+            #endregion
 
             Console.ReadKey();
-            #endregion
         }
     }
 }
