@@ -48,6 +48,9 @@
     <Compile Include="MathOperationFromIncrement\MathOperationsFromIncrement.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="StackAndQueue\CustomQueue.cs" />
+    <Compile Include="StackAndQueue\CustomStack.cs" />
+    <Compile Include="StackAndQueue\NodeSQ.cs" />
     <Compile Include="StringAlgorythms\CustomStringAlgorythms.cs" />
   </ItemGroup>
   <ItemGroup>

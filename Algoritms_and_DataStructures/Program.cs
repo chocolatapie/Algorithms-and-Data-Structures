@@ -1,7 +1,8 @@
 ﻿using System;
-using Algoritms_and_DataStructures.LinkedList;
 using Algoritms_and_DataStructures.MathOperationFromIncrement;
+using Algoritms_and_DataStructures.StackAndQueue;
 using Algoritms_and_DataStructures.StringAlgorythms;
+using Node = Algoritms_and_DataStructures.LinkedList.Node;
 
 namespace Algoritms_and_DataStructures
 {
@@ -127,8 +128,35 @@ namespace Algoritms_and_DataStructures
             string compress2 = "asdfghj";
             Console.WriteLine(CustomStringAlgorythms.StringCompress(compress1));
             Console.WriteLine(CustomStringAlgorythms.StringCompress(compress2));
+            Console.WriteLine("-------------------------------------------------------------------");
             Console.WriteLine();
             //
+            #endregion
+
+            #region StackAndQueue
+            CustomStack myStack = new CustomStack();
+            myStack.Push(4);
+            myStack.Push(2);
+            myStack.Push(3);
+            myStack.Push(0);
+            myStack.Push(4);
+            myStack.Push(6);
+            myStack.Push(7);
+            myStack.Push(9);
+            Console.WriteLine("First stack is the origin one. " +
+                              "Second - is with bubbled minValue.");
+            foreach (NodeSQ node in myStack)
+            {
+                Console.WriteLine(" " + node.Value);
+            }
+
+            Console.WriteLine();
+            Console.WriteLine("--------");
+            myStack.BubbleMinUp();
+            foreach (NodeSQ node in myStack)
+            {
+                Console.WriteLine(" " + node.Value);
+            }
             #endregion
 
             Console.ReadKey();
