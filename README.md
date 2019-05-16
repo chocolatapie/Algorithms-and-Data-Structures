@@ -1,2 +1,1 @@
-# Algorithms and Data Structures
-#2 Exercises
+# Algorithms and Data Structures (& Puzzles)
