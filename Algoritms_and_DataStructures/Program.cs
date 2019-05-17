@@ -3,6 +3,7 @@ using Algoritms_and_DataStructures.MathOperationFromIncrement;
 using Algoritms_and_DataStructures.ReversLettersOnly;
 using Algoritms_and_DataStructures.StackAndQueue;
 using Algoritms_and_DataStructures.StringAlgorythms;
+using Algoritms_and_DataStructures.SwitchVariables;
 using Node = Algoritms_and_DataStructures.LinkedList.Node;
 
 namespace Algoritms_and_DataStructures
@@ -118,8 +119,8 @@ namespace Algoritms_and_DataStructures
             string permut2 = "hgfdsa";
             string permut3 = "aaasssdddff";
             string permut4 = "aassssddfff";
-            Console.WriteLine(CustomStringAlgorythms.IsPermutation(permut1, permut2));
-            Console.WriteLine(CustomStringAlgorythms.IsPermutation(permut3, permut4));
+            Console.WriteLine(permut1+" "+permut2+" "+CustomStringAlgorythms.IsPermutation(permut1, permut2));
+            Console.WriteLine(permut3 + " " + permut4 + " " + CustomStringAlgorythms.IsPermutation(permut3, permut4));
             Console.WriteLine();
             //
 
@@ -171,9 +172,29 @@ namespace Algoritms_and_DataStructures
             Console.WriteLine("And here only letters reversed:");
             LettersReverser.ReverseLettersOnly(input);
             Console.WriteLine(LettersReverser.ReverseLettersOnly(input));
+            Console.WriteLine("-------------------------------------------------------------------");
+            Console.WriteLine();
 
             #endregion
 
+            #region SwitchVariables
+            int Aaa = 4;
+            int Bbb = 9;
+
+            Console.WriteLine("Origin: ");
+            Console.WriteLine("A = {0}", Aaa);
+            Console.WriteLine("B = {0}", Bbb);
+
+            VarSwitcher.Switch(ref Aaa, ref Bbb);
+            Console.WriteLine();
+
+            Console.WriteLine("Reversed:");
+            Console.WriteLine("A = {0}", Aaa);
+            Console.WriteLine("B = {0}", Bbb);
+            Console.WriteLine("-------------------------------------------------------------------");
+            Console.WriteLine();
+            #endregion
+            
             Console.ReadKey();
         }
     }

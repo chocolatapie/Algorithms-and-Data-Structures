@@ -53,10 +53,13 @@
     <Compile Include="StackAndQueue\CustomStack.cs" />
     <Compile Include="StackAndQueue\NodeSQ.cs" />
     <Compile Include="StringAlgorythms\CustomStringAlgorythms.cs" />
+    <Compile Include="SwitchVariables\VarSwitcher.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="BinaryTree\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
