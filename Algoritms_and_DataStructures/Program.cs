@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Collections.Generic;
+using Algoritms_and_DataStructures.BinaryTree;
 using Algoritms_and_DataStructures.MathOperationFromIncrement;
 using Algoritms_and_DataStructures.ReversLettersOnly;
 using Algoritms_and_DataStructures.StackAndQueue;
@@ -194,7 +196,10 @@ namespace Algoritms_and_DataStructures
             Console.WriteLine("-------------------------------------------------------------------");
             Console.WriteLine();
             #endregion
-            
+
+            #region BinaryTree
+            #endregion
+
             Console.ReadKey();
         }
     }
