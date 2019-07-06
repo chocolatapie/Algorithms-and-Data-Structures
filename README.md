@@ -6,3 +6,5 @@
 * Stack and Queue puzzles
 * String and Arrays puzzles
 * Math Logic puzzles
+
+Project is designed as simple console app with all necessary data structures classes customly created.
