@@ -18,7 +18,17 @@
 <details>
   <summary>Stack and Queue puzzles</summary>
   
-  * Stack and Queue puzzles
+  **Stack**
+  
+  * Getting minimum value.
+  
+  * Bubbling up minimum value.
+  
+  * Implementing custom IEnumerator.
+  
+  **Queue**
+   
+  * Implementing all basic operations and custom enumeration.
   
 </details>
 
