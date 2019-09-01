@@ -9,11 +9,11 @@
 <details>
   <summary>Math Logic puzzles</summary>
 
-* Substraction
+* ######Substraction. Implementing math operation of substraction using basic operations of incrementing number varaible and storing value in memory.
 
-* Multiplication
+* ######Multiplication. Implementing math operation of multiplication using basic operations of incrementing number varaible and storing value in memory.
 
-* Division
+* ######Division. Implementing math operation of division using basic operations of incrementing number varaible and storing value in memory and implemented before operation of multiplication.
 
 </details>
 
