@@ -39,7 +39,7 @@
   
   * **Figuring out** is string is a permutation of chars (dcba is a permutation of abcd).
   
-  * **Compressing** of string (aaaabbbbbccc becomes a a4b5c3).
+  * **Compressing** of string (aaaabbbbbccc becomes a4b5c3).
   
 </details>
 
