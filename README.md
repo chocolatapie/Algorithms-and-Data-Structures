@@ -35,7 +35,11 @@
 <details>
   <summary>String and Arrays puzzles</summary>
   
-  * String and Arrays puzzles
+  * Figuring out are all symbols in string unique.
+  
+  * Figuring out is string a permutation (dcba is a permutation of abcd).
+  
+  * Compressing of string (aaaabbbbbccc becomes a a4b5c3).
   
 </details>
 
