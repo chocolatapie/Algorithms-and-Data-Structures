@@ -35,9 +35,9 @@
 <details>
   <summary>String and Arrays puzzles</summary>
   
-  * Figuring out are all symbols in string unique.
+  * Figuring out are all symbols in string are unique.
   
-  * Figuring out is string a permutation (dcba is a permutation of abcd).
+  * Figuring out is string is a permutation of chars (dcba is a permutation of abcd).
   
   * Compressing of string (aaaabbbbbccc becomes a a4b5c3).
   
