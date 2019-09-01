@@ -9,7 +9,11 @@
 <details>
   <summary>Math Logic puzzles</summary>
 
-* Math Logic puzzles
+* Substraction
+
+* Multiplication
+
+* Division
 
 </details>
 
