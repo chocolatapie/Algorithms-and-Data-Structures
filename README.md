@@ -5,42 +5,41 @@
 <details>
   <summary>Linked List puzzles</summary>
   
-  * Removing duplicates from linked list.
+  * **Removing** duplicates from linked list.
   
-  * Finding n-th value from end in linked list.
+  * **Finding** n-th value from end in linked list.
   
-  * Figuring out is linked list a palindrome.
+  * **Figuring out** is linked list a palindrome.
   
-  * Implementing custom IEnumerator.
+  * **Implementing** custom IEnumerator.
   
 </details>
 
 <details>
   <summary>Stack and Queue puzzles</summary>
   
-  
   **Stack**
   
-  * Getting minimum value.
+  * **Getting** minimum value.
   
-  * Bubbling up minimum value.
+  * **ubbling up** minimum value.
   
-  * Implementing custom IEnumerator.
+  * **Implementing** custom IEnumerator.
   
   **Queue**
    
-  * Implementing all basic operations and custom enumeration.
+  * **Implementing** all basic operations and custom enumeration.
   
 </details>
 
 <details>
   <summary>String and Arrays puzzles</summary>
   
-  * Figuring out are all symbols in string are unique.
+  * **Figuring out** are all symbols in string are unique.
   
-  * Figuring out is string is a permutation of chars (dcba is a permutation of abcd).
+  * **Figuring out** is string is a permutation of chars (dcba is a permutation of abcd).
   
-  * Compressing of string (aaaabbbbbccc becomes a a4b5c3).
+  * **Compressing** of string (aaaabbbbbccc becomes a a4b5c3).
   
 </details>
 
@@ -65,9 +64,9 @@
 <details>
   <summary>General puzzles</summary>
 
-* Switching values of two number variables without using third one.
+* **Switching** values of two number variables without using third one.
 
-* Reflecting all symbols in string excluding non-letter chars (abc4de#fg$ becomes gfe4dc#ba$)
+* **Reflecting all** symbols in string excluding non-letter chars (abc4de#fg$ becomes gfe4dc#ba$)
 
 </details>
 
