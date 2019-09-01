@@ -61,4 +61,13 @@
 
 </details>
 
+<details>
+  <summary>General puzzles</summary>
+
+* Switching values of two number variables without using third one.
+
+* Reflecting all symbols in string excluding non-letter chars (abc4de#fg$ becomes gfe4dc#ba$)
+
+</details>
+
 Project is designed as simple console app with all necessary classes of data structures customly created.
