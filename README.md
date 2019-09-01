@@ -1,10 +1,34 @@
 # Algorithms and Data Structures (& Puzzles)
 
 ### There are solved following puzzles 
-* Binary tree puzzles
-* Linked List puzzles
-* Stack and Queue puzzles
-* String and Arrays puzzles
+
+<details>
+  <summary>Binary tree puzzles</summary>
+  
+  * Binary tree puzzles
+  
+</details>
+
+<details>
+  <summary>Linked List puzzles</summary>
+  
+  * Linked List puzzles
+  
+</details>
+
+<details>
+  <summary>Stack and Queue puzzles</summary>
+  
+  * Stack and Queue puzzles
+  
+</details>
+
+<details>
+  <summary>String and Arrays puzzles</summary>
+  
+  * String and Arrays puzzles
+  
+</details>
 
 <details>
   <summary>Math Logic puzzles</summary>
