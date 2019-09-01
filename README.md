@@ -18,6 +18,7 @@
 <details>
   <summary>Stack and Queue puzzles</summary>
   
+  
   **Stack**
   
   * Getting minimum value.
