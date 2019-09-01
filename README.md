@@ -3,13 +3,6 @@
 ### There are solved following puzzles 
 
 <details>
-  <summary>Binary tree puzzles</summary>
-  
-  * Binary tree puzzles
-  
-</details>
-
-<details>
   <summary>Linked List puzzles</summary>
   
   * Linked List puzzles
@@ -27,6 +20,13 @@
   <summary>String and Arrays puzzles</summary>
   
   * String and Arrays puzzles
+  
+</details>
+
+<details>
+  <summary>Binary tree puzzles</summary>
+  
+  * Binary tree puzzles
   
 </details>
 
