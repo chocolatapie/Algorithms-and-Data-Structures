@@ -5,7 +5,13 @@
 <details>
   <summary>Linked List puzzles</summary>
   
-  * Linked List puzzles
+  * Removing duplicates from linked list.
+  
+  * Finding n-th value from end in linked list.
+  
+  * Figuring out is linked list a palindrome.
+  
+  * Implementing custom IEnumerator.
   
 </details>
 
