@@ -22,7 +22,7 @@
   
   * **Getting** minimum value.
   
-  * **ubbling up** minimum value.
+  * **Bubbling up** minimum value.
   
   * **Implementing** custom IEnumerator.
   
