@@ -5,13 +5,11 @@ namespace Algoritms_and_DataStructures.StackAndQueue
 {
     class CustomStack
     {
-        private int _nodeNumbers;
         private NodeSQ _headNode;
 
-        public int Count
-        {
-            get { return _nodeNumbers; }
-        }
+        public int Count { get; private set; }
+
+        public bool IsEmpty => Count == 0;
 
         public int GetMinimum()
         {
@@ -24,11 +22,6 @@ namespace Algoritms_and_DataStructures.StackAndQueue
                 current = current.NextNode;
             }
             return min;
-        }
-
-        public bool IsEmpty
-        {
-            get { return _nodeNumbers == 0; }
         }
 
         public bool ContainsValue(int value)
@@ -48,7 +41,7 @@ namespace Algoritms_and_DataStructures.StackAndQueue
             NodeSQ node = new NodeSQ(value);
             node.NextNode = _headNode;
             _headNode = node;
-            _nodeNumbers++;
+            Count++;
         }
 
         public void BubbleMinUp()
@@ -88,21 +81,17 @@ namespace Algoritms_and_DataStructures.StackAndQueue
         public NodeSQ Pop()
         {
             if (IsEmpty)
-            {
                 throw new Exception("Empty Stack!");
-            }
             NodeSQ retNode = _headNode;
             _headNode = _headNode.NextNode;
-            _nodeNumbers--;
+            Count--;
             return retNode;
         }
 
         public NodeSQ Peek()
         {
             if (IsEmpty)
-            {
                 throw new Exception("Empty Stack!");
-            }
             return _headNode;
         }
 

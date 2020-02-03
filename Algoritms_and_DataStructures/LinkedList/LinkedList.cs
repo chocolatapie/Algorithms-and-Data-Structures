@@ -6,21 +6,19 @@ namespace Algoritms_and_DataStructures.LinkedList
     {
         private int _numberOfNodes;
         private Node _headNode;
+
         public int Count => _numberOfNodes;
 
         public void AddLastValue(int input)
         {
             if (_headNode == null)
-            {
                 _headNode = new Node(input);
-            }
             else
             {
                 Node current = _headNode;
                 while (current.NextNode != null)
-                {
                     current = current.NextNode;
-                }
+
                 current.NextNode = new Node(input);
             }
             _numberOfNodes++;
@@ -29,16 +27,13 @@ namespace Algoritms_and_DataStructures.LinkedList
         public void AddLastNode(Node node)
         {
             if (_headNode == null)
-            {
                 _headNode = node;
-            }
             else
             {
                 Node currentNode = _headNode;
                 while (currentNode.NextNode != null)
-                {
                     currentNode = currentNode.NextNode;
-                }
+
                 currentNode.NextNode = node;
             }
             _numberOfNodes++;
@@ -47,9 +42,7 @@ namespace Algoritms_and_DataStructures.LinkedList
         public void DeleteNode(Node node)
         {
             if (node == _headNode)
-            {
                 _headNode = _headNode.NextNode;
-            }
             else
             {
                 Node current = _headNode;
@@ -62,11 +55,8 @@ namespace Algoritms_and_DataStructures.LinkedList
                             current.NextNode = null;
                             break;
                         }
-                        else
-                        {
-                            current.NextNode = current.NextNode.NextNode;
-                            break;
-                        }
+                        current.NextNode = current.NextNode.NextNode;
+                        break;
                     }
                     current = current.NextNode;
                 }
@@ -98,9 +88,7 @@ namespace Algoritms_and_DataStructures.LinkedList
             while (current.NextNode != null)
             {
                 if (current.Value == val)
-                {
                     return true;
-                }
                 current = current.NextNode;
             }
             return false;
@@ -154,9 +142,7 @@ namespace Algoritms_and_DataStructures.LinkedList
             for (int i = 0; i < _numberOfNodes / 2; i++)
             {
                 if (values[i] != values[_numberOfNodes - i - 1])
-                {
                     return false;
-                }
             }
             return true;
         }

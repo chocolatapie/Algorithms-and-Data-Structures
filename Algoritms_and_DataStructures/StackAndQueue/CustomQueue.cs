@@ -7,17 +7,10 @@ namespace Algoritms_and_DataStructures.StackAndQueue
     {
         private NodeSQ _headNode;
         private NodeSQ _tailNode;
-        private int _nodeNumbers;
 
-        public int Count
-        {
-            get { return _nodeNumbers; }
-        }
+        public int Count { get; private set; }
 
-        public bool IsEmpty
-        {
-            get { return _nodeNumbers == 0; }
-        }
+        public bool IsEmpty => Count == 0;
 
         public void Enqueue(int value)
         {
@@ -25,12 +18,12 @@ namespace Algoritms_and_DataStructures.StackAndQueue
             NodeSQ tempNode = _tailNode;
             _tailNode = node;
 
-            if (_nodeNumbers == 0)
+            if (Count == 0)
                 _headNode = _tailNode;
             else
                 tempNode.NextNode = _tailNode;
 
-            _nodeNumbers++;
+            Count++;
         }
 
         public int Dequeue()
@@ -40,7 +33,7 @@ namespace Algoritms_and_DataStructures.StackAndQueue
 
             int retValue = _headNode.Value;
             _headNode = _headNode.NextNode;
-            _nodeNumbers--;
+            Count--;
             return retValue;
         }
 

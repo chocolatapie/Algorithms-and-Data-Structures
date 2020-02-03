@@ -14,9 +14,7 @@ namespace Algoritms_and_DataStructures.StringAlgorythms
                 for (int j = i + 1; j < inputLength; j++)
                 {
                     if (input[i] == input[j])
-                    {
                         return false;
-                    }
                 }
             }
             return true;
@@ -25,9 +23,7 @@ namespace Algoritms_and_DataStructures.StringAlgorythms
         public static bool IsPermutation(string input1, string input2)
         {
             if (input1.Length != input2.Length)
-            {
                 return false;
-            }
 
             int length = input1.Length;
 

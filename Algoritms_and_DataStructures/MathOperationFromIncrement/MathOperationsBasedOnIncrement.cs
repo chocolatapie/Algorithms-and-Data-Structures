@@ -2,26 +2,26 @@
 
 namespace Algoritms_and_DataStructures.MathOperationFromIncrement
 {
-    public static class MathOperationsFromIncrement
+    public static class MathOperationsBasedOnIncrement
     {
         public static int Substraction(int a, int b)
         {
             if (b == 0)
                 return a;
+
             if (a == 0)
                 return -b;
+
             int counter = 0;
             int result = 0;
             if (a < b)
-            {
                 return -Substraction(b, a);
-            }
+
             while (counter < a)
             {
                 if (counter >= b)
-                {
                     result++;
-                }
+
                 counter++;
             }
             return result;
@@ -58,9 +58,7 @@ namespace Algoritms_and_DataStructures.MathOperationFromIncrement
         public static int Division(int a, int b)
         {
             if (b == 0)
-            {
-                throw new DivideByZeroException("Деление на ноль!");
-            }
+                throw new DivideByZeroException("Division by zero!");
 
             if (a == 0)
                 return 0;

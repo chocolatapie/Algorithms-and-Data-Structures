@@ -1,6 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using Algoritms_and_DataStructures.BinaryTree;
 using Algoritms_and_DataStructures.MathOperationFromIncrement;
 using Algoritms_and_DataStructures.ReversLettersOnly;
 using Algoritms_and_DataStructures.StackAndQueue;
@@ -82,19 +80,19 @@ namespace Algoritms_and_DataStructures
             int A = 4;
             int B = 9;
 
-            int C = MathOperationsFromIncrement.Substraction(A, B);
+            int C = MathOperationsBasedOnIncrement.Substraction(A, B);
             Console.WriteLine("{0} - {1} = {2}", A, B, C);
             Console.WriteLine();
 
             Console.WriteLine("Multiplication: ");
-            int D = MathOperationsFromIncrement.Multiplication(A, B);
+            int D = MathOperationsBasedOnIncrement.Multiplication(A, B);
             Console.WriteLine("{0} * {1} = {2}", A, B, D);
 
             Console.WriteLine();
             Console.WriteLine("Division: ");
             int Aa = 100;
             int Bb = 25;
-            int Cc = MathOperationsFromIncrement.Division(Aa, Bb);
+            int Cc = MathOperationsBasedOnIncrement.Division(Aa, Bb);
             Console.WriteLine("{0} / {1} = {2}", Aa, Bb, Cc);
             Console.WriteLine("-------------------------------------------------------------------");
             Console.WriteLine();
@@ -124,17 +122,18 @@ namespace Algoritms_and_DataStructures
             Console.WriteLine(permut1+" "+permut2+" "+CustomStringAlgorythms.IsPermutation(permut1, permut2));
             Console.WriteLine(permut3 + " " + permut4 + " " + CustomStringAlgorythms.IsPermutation(permut3, permut4));
             Console.WriteLine();
-            //
 
             //Compressor
-            Console.WriteLine("Compresses the long string");
+            Console.WriteLine("Compresses the long string:");
             string compress1 = "aaaaaavvvvvvfghhhjjk";
-            string compress2 = "asdfghj";
+            Console.WriteLine(compress1);
             Console.WriteLine(CustomStringAlgorythms.StringCompress(compress1));
+            Console.WriteLine("Compresses the short string:");
+            string compress2 = "asdfghj";
+            Console.WriteLine(compress2);
             Console.WriteLine(CustomStringAlgorythms.StringCompress(compress2));
             Console.WriteLine("-------------------------------------------------------------------");
             Console.WriteLine();
-            //
             #endregion
 
             #region StackAndQueue
@@ -176,7 +175,6 @@ namespace Algoritms_and_DataStructures
             Console.WriteLine(LettersReverser.ReverseLettersOnly(input));
             Console.WriteLine("-------------------------------------------------------------------");
             Console.WriteLine();
-
             #endregion
 
             #region SwitchVariables

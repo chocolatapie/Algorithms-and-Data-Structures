@@ -6,18 +6,14 @@ namespace Algoritms_and_DataStructures.BinaryTree
 {
     class CustomBinaryTree
     {
-        private int _nodesNumbers { get; set; }
-        public BinaryTreeNode RootNode { get; private set; }
-        
-        public int Count
-        {
-            get { return _nodesNumbers; }
-        }
+        private int _nodesNumbers;
+        private int? _lastPrinted;
 
-        public bool IsEmpty
-        {
-            get { return _nodesNumbers == 0; }
-        }
+        public BinaryTreeNode RootNode { get; private set; }
+
+        public int Count => _nodesNumbers;
+
+        public bool IsEmpty => _nodesNumbers == 0;
 
         public void Clear()
         {
@@ -33,9 +29,7 @@ namespace Algoritms_and_DataStructures.BinaryTree
                 _nodesNumbers++;
             }
             else
-            {
                 AddTo(RootNode, val);
-            }
         }
 
         public void AddTo(BinaryTreeNode node, int val)
@@ -48,9 +42,7 @@ namespace Algoritms_and_DataStructures.BinaryTree
                     _nodesNumbers++;
                 }
                 else
-                {
                     AddTo(node.LeftChild, val);
-                }
             }
             else
             {
@@ -60,9 +52,7 @@ namespace Algoritms_and_DataStructures.BinaryTree
                     _nodesNumbers++;
                 }
                 else
-                {
                     AddTo(node.RightChild, val);
-                }
             }
         }
 
@@ -72,14 +62,12 @@ namespace Algoritms_and_DataStructures.BinaryTree
                 throw new Exception("Tree is empty!");
 
             if (root.LeftChild != null)
-            {
                 InOrderTraversal(root.LeftChild);
-            }
+
             Console.WriteLine(root.Value);
+
             if (root.RightChild != null)
-            {
                 InOrderTraversal(root.RightChild);
-            }
         }
 
         public void PreOrderTraversal(BinaryTreeNode root)
@@ -88,19 +76,17 @@ namespace Algoritms_and_DataStructures.BinaryTree
                 throw new Exception("Tree is empty!");
 
             Console.WriteLine(root.Value);
+
             if (root.LeftChild != null)
-            {
                 InOrderTraversal(root.LeftChild);
-            }
+
             if (root.RightChild != null)
-            {
                 InOrderTraversal(root.RightChild);
-            }
         }
 
         public bool Contains(int item)
         {
-            BinaryTreeNode currentNode = RootNode;
+            var currentNode = RootNode;
 
             while (currentNode != null)
             {
@@ -121,8 +107,8 @@ namespace Algoritms_and_DataStructures.BinaryTree
 
         private BinaryTreeNode FindNode(int val)
         {
-            BinaryTreeNode currentNode = RootNode;
-            BinaryTreeNode toRetrun = null;
+            var currentNode = RootNode;
+            BinaryTreeNode returningNode = null;
             while (currentNode != null)
             {
                 switch (val.CompareTo(currentNode.Value))
@@ -134,25 +120,23 @@ namespace Algoritms_and_DataStructures.BinaryTree
                         currentNode = currentNode.LeftChild;
                         break;
                     default: // case 0
-                        toRetrun = currentNode;
+                        returningNode = currentNode;
                         break;
                 }
             }
-            return toRetrun;
+            return returningNode;
         }
 
         public List<int> NodesToList(BinaryTreeNode root)
         {
             List<int> nodesVal = new List<int>();
             if (root.LeftChild != null)
-            {
                 InOrderTraversal(root.LeftChild);
-            }
+
             nodesVal.Add(root.Value);
             if (root.RightChild != null)
-            {
                 InOrderTraversal(root.RightChild);
-            }
+
             return nodesVal;
         }
 
@@ -165,7 +149,7 @@ namespace Algoritms_and_DataStructures.BinaryTree
             }
         }
 
-        public void craeteLevelLinkedLists(BinaryTreeNode root, List<LinkedList<BinaryTreeNode>> lists, int level)
+        public void CreateLevelLinkedLists(BinaryTreeNode root, List<LinkedList<BinaryTreeNode>> lists, int level)
         {
             if (root == null)
                 return;
@@ -182,28 +166,22 @@ namespace Algoritms_and_DataStructures.BinaryTree
             }
 
             list.AddLast(root);
-            craeteLevelLinkedLists(root.LeftChild, lists, level + 1);
-            craeteLevelLinkedLists(root.RightChild, lists, level + 1);
+            CreateLevelLinkedLists(root.LeftChild, lists, level + 1);
+            CreateLevelLinkedLists(root.RightChild, lists, level + 1);
         }
 
-        public List<LinkedList<BinaryTreeNode>> craeteLevelLinkedLists(BinaryTreeNode root)
-        {
-            List<LinkedList<BinaryTreeNode>> lists = new List<LinkedList<BinaryTreeNode>>();
-            craeteLevelLinkedLists(root, lists, 0);
-            return lists;
-        }
-
-        private static int? lastPrinted;
         public bool IsBinarySearchTree(BinaryTreeNode root)
         {
             if (root == null)
                 return true;
+
             if (!IsBinarySearchTree(root.LeftChild))
                 return false;
-            if (lastPrinted != null && root.Value <= lastPrinted)
+
+            if (_lastPrinted != null && root.Value <= _lastPrinted)
                 return false;
 
-            lastPrinted = root.Value;
+            _lastPrinted = root.Value;
             if (!IsBinarySearchTree(root.RightChild))
                 return false;
 
